@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title></title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+
+
+    <script defer src="dist/fontawesome/all.min.js"></script>
+
+	<script type="text/javascript">
+		var forgetPop = true;
+		function onPopState(event) {
+			if(forgetPop){
+				forgetPop = false;
+			} else {
+				parent.postMessage(event.target.location.href, "app://obsidian.md");
+			}
+        }
+		window.onpopstate = onPopState;
+		window.onmessage = event => {
+			if(event.data == "reload"){
+				window.document.location.reload();
+			}
+			forgetPop = true;
+		}
+
+		function fitElements(){
+			const itemsToFit = document.getElementsByClassName('fitText');
+			for (const item in itemsToFit) {
+				if (Object.hasOwnProperty.call(itemsToFit, item)) {
+					var element = itemsToFit[item];
+					fitElement(element,1, 1000);
+					element.classList.remove('fitText');
+				}
+			}
+		}
+
+		function fitElement(element, start, end){
+
+			const size = (end + start) / 2;
+			element.style.fontSize = `${size}px`;
+
+			if(Math.abs(start - end) < 1){
+				return;
+			}
+
+			if(element.scrollHeight > element.offsetHeight){
+				fitElement(element, start, size);
+			} else {
+				fitElement(element, size, end);
+			}		
+		}
+
+
+		document.onreadystatechange = () => {
+			fitElements();
+			if (document.readyState === 'complete') {
+				if (window.location.href.indexOf("?export") != -1){
+					parent.postMessage(event.target.location.href, "app://obsidian.md");
+				}
+				if (window.location.href.indexOf("print-pdf") != -1){
+					let stateCheck = setInterval(() => {
+						clearInterval(stateCheck);
+						window.print();
+					}, 250);
+				}
+			}
+	};
+
+
+        </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"># Descrever uma floresta
+#ficha </script></section><section ><section data-markdown><script type="text/template">## Diversidade
+### Índice de Shannon
+O índice de Shannon foi publicado em 1949 na The mathematical theory of comunication. Expressa o grau de incerteza que existe em se predizer a qual espécie pertence um indivíduo escolhido ao acaso em uma comunidade contendo S espécies e N indivíduos.</script></section><section data-markdown><script type="text/template">`$$H' = - \sum^S_{i=1} (\frac{n_i}{N} * ln(\frac{n_i}{N})) $$`
+Em que:
+- S = número de espécies
+- N = Número de indivíduos total
+- `$n_i$` = número de indivíduos da espécie i</script></section></section><section ><section data-markdown><script type="text/template">### Índice de Simpson
+O índice de Simpson também foi publicado em 1949, mas na revista Nature. Em sua forma original (Ds), ele indica a probabilidade de que os dois indivíduos tomados ao acaso de uma amostra com N indivíduos e S espécies sejam pertencentes à mesma espécie.</script></section><section data-markdown><script type="text/template">`$$Ds = \frac{\sum^S_{i=1} n_i(n_i - 1)}{N(N-1)} $$`
+Em que:
+- S = número de espécies
+- N = Número de indivíduos total
+- `$n_i$` = número de indivíduos da espécie i</script></section></section><section ><section data-markdown><script type="text/template">## Equabilidade
+### Equabilidade de Pielou
+   `$$J = \frac{H'}{H'_{max}}$$`</script></section><section data-markdown><script type="text/template">Em que:
+`$$H'_{max} = ln(S)$$`
+- S = número de espécie
+- H' = índice de Shannon</script></section></section><section  data-markdown><script type="text/template">### Coeficiente de mistura de Jentsch
+`$$QM = \frac{S}{N}$$`
+Em que:
+- S = número de espécie
+- N = número de indivíduos</script></section><section ><section data-markdown><script type="text/template"># Estrutura da florestas
+## Estrutura horizontal
+Frequência: percentual de parcelas que contêm indivíduos de determinada espécie.</script></section><section data-markdown><script type="text/template">`$$FA_i = \frac{U_i}{U_T} * 100$$`
+Em que:
+- `$U_i$` = número de parcelas com a presença da i-ésima espécie.
+- `$UT$` = número total de parcelas amostradas.
+- `$S$` = número total de espécies.</script></section></section><section  data-markdown><script type="text/template">Densidade: número de indivíduos por hectare.
+`$$DA_i = \frac{n_i}{A}$$`
+Em que:
+- `$n_i$` = número de indivíduos da i-ésima espécie.
+- `$A$` = área total amostrada em hectares.
+- `$S$` = número total de espécies.</script></section><section  data-markdown><script type="text/template">Dominância: expressa o grau de ocupação da área da floresta pela área basal da espécie.
+`$$DoA_i = \frac{G_i}{A}$$`
+Em que:
+- `$G_i$` = área basal da i-ésima espécie em m2.
+- `$A$` = área total amostrada em hectares.
+- `$S$` = número total de espécies.</script></section><section ><section data-markdown><script type="text/template">## Estrutura vertical
+A Posição sociológica depende dos estratos de altura dos indivíduos arbóreos, para os quais os valores fitossociológicos são calculados.
+Valor fitossociológico do estrato:
+`$$VF_{e} = \frac{N_e}{N} * 100$$`</script></section><section data-markdown><script type="text/template">Valor fitossociológico é a porcentagem de indivíduos da i-ésima espécie no e-ésimo estrato vertical, em relação ao total de indivíduos:
+`$$VF_{ie} = VF_e * n_{ie}$$`</script></section><section data-markdown><script type="text/template">Posição sociológica da espécie:
+`$$PSA_i = \sum^E_{e=1} VF_{ie}$$`</script></section></section><section ><section data-markdown><script type="text/template">## Estrutura interna
+Diferentes fatores podem ser usados para estudar a estrutura interna:
+- Qualidade do fuste.
+- Incidência de cipós.
+- Iluminação de copa.
+- Qualidade de copa.
+- Comercialização.
+- Tipo de mercado.</script></section><section data-markdown><script type="text/template">A qualidade do fuste é um indicador do valor econômico da floresta, e é o principal aspecto avaliado na estrutura interna da floresta.</script></section><section data-markdown><script type="text/template">Classe absoluta de qualidade:
+`$$CaQ_i = \sum_{c=1}^C (n_{ic} * \frac{Nc}{N})$$`
+Em que:
+`$N_c$` é o número total de indivíduos na c-ésima classe de qualidade.
+`$n_{ic}$` é o número de indivíduos da i-ésima espécie na c-ésima classe de qualidade.
+Classe relativa de qualidade:</script></section></section><section ><section data-markdown><script type="text/template">## Estrutura paramétrica
+A estrutura paramétrica é analisada com base nas estimativas dos parâmetros que expressam densidades e estoques da floresta (atributos da floresta).</script></section><section data-markdown><script type="text/template">O volume não é uma variável medida diretamente no inventário. Com base no diâmetro (e altura) estima-se o volume de cada uma das árvores amostradas. A principal técnica utilizada para o estimar volume de árvores individuais são as equações volumétricas.</script></section><section data-markdown><script type="text/template">Por muito tempo, a quantificação volumétrica das espécies amazônicas foi efetuada com base no fator de forma de 0,7. Esse valor foi empregado de forma generalizada para diferentes espécies, sítios, formações e tipologias florestais, ocasionando sérios erros nas estimativas volumétricas.</script></section><section data-markdown><script type="text/template">No início da década de 1980, aflorou a necessidade pelo aprimoramento das técnicas para estimar o volume de árvores, visando à obtenção de estimativas mais confiáveis. Desde então, diversos trabalhos foram realizados na Amazônia com esse objetivo.</script></section><section data-markdown><script type="text/template">A estrutura diamétrica é mais utilizada que o volume para caracterizar tipologias vegetais, estágios sucessionais, estados de conservação, regimes de manejo, processos de dinâmica de crescimento e produção, grupos ecológicos e como referência para o manejo.</script></section><section data-markdown><script type="text/template">O diâmetro acabou se consagrando como uma variável importante na descrição da estrutura florestal, como também na comercialização da madeira. Assim, conhecer a distribuição diamétrica é fundamental!</script></section><section data-markdown><script type="text/template">Tipos de distribuições:
+- Unimodal
+- Multimodal
+- Normal
+- J-invertido
+- Contínua</script></section><section data-markdown><script type="text/template">Um histograma, também conhecido como distribuição de frequências ou diagrama das frequências, é a representação gráfica, em colunas (retângulos), de um conjunto de dados previamente tabulado e dividido em classes uniformes.</script></section><section data-markdown><script type="text/template">O método de Sturges pode ser utilizado para obtenção do n° de classes:
+`$1+3,333*log(N)$` 
+Sendo N o número de indivíduos.</script></section></section></div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+	<script src="plugin/mermaid/mermaid.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath.MathJax3,
+		  RevealMermaid,
+		  RevealCustomControls,
+        ],
+
+		mathjax3: {
+			mathjax: 'plugin/math/mathjax/tex-mml-chtml.js',
+		},
+
+		customcontrols: {
+			controls: [
+			]
+		},
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"width":960,"height":700,"margin":0.04,"controls":true,"progress":true,"slideNumber":true,"transition":"slide","transitionSpeed":"default"}, queryOptions);
+    </script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
