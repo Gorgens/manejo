@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title></title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+
+
+    <script defer src="dist/fontawesome/all.min.js"></script>
+
+	<script type="text/javascript">
+		var forgetPop = true;
+		function onPopState(event) {
+			if(forgetPop){
+				forgetPop = false;
+			} else {
+				parent.postMessage(event.target.location.href, "app://obsidian.md");
+			}
+        }
+		window.onpopstate = onPopState;
+		window.onmessage = event => {
+			if(event.data == "reload"){
+				window.document.location.reload();
+			}
+			forgetPop = true;
+		}
+
+		function fitElements(){
+			const itemsToFit = document.getElementsByClassName('fitText');
+			for (const item in itemsToFit) {
+				if (Object.hasOwnProperty.call(itemsToFit, item)) {
+					var element = itemsToFit[item];
+					fitElement(element,1, 1000);
+					element.classList.remove('fitText');
+				}
+			}
+		}
+
+		function fitElement(element, start, end){
+
+			const size = (end + start) / 2;
+			element.style.fontSize = `${size}px`;
+
+			if(Math.abs(start - end) < 1){
+				return;
+			}
+
+			if(element.scrollHeight > element.offsetHeight){
+				fitElement(element, start, size);
+			} else {
+				fitElement(element, size, end);
+			}		
+		}
+
+
+		document.onreadystatechange = () => {
+			fitElements();
+			if (document.readyState === 'complete') {
+				if (window.location.href.indexOf("?export") != -1){
+					parent.postMessage(event.target.location.href, "app://obsidian.md");
+				}
+				if (window.location.href.indexOf("print-pdf") != -1){
+					let stateCheck = setInterval(() => {
+						clearInterval(stateCheck);
+						window.print();
+					}, 250);
+				}
+			}
+	};
+
+
+        </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"># O manejo de florestas nativas
+#ficha
+</script></section><section  data-markdown><script type="text/template">
+A biodiversidade, o suprimento de madeira e o sequestro de carbono deram bastante visibilidade às florestas nas últimas décadas. A crescente pressão internacional tem feito com que os países que possuem grande cobertura florestal adotem posturas mais afirmativas diante das questões ambientais como o desmatamento. 
+</script></section><section  data-markdown><script type="text/template">
+No Brasil por exemplo, percebe-se uma clara evolução dos instrumentos legais desde da colonização portuguesa até o dias de hoje. Ao longo do tempo, diversos órgãos foram criados voltados para a gestão não só dos recursos florestais, mas dos recursos naturais como um todo. 
+</script></section><section  data-markdown><script type="text/template">
+Os diferentes atores sociais, como governo, autarquias, órgãos de fiscalização e controle, organizações sociais têm se interessado cada vez mais pela compreensão de como a sociedade como um todo se relacionada com os recursos naturais, seja do ponto de vista da subsistência, seja como um patrimônio natural.
+</script></section><section  data-markdown><script type="text/template">
+A heterogeneidade das florestas, bem como das relações sociais existentes, dificultam a adoção de um planejamento único e polivalente. Por isto, a exploração dos recursos naturais precisa estar associada a planos de manejo especificamente elaborados para um local específico.
+</script></section><section  data-markdown><script type="text/template">
+Durante muito tempo, as florestas Brasileiras foram exploradas de forma irresponsável, onde as ações eram marcadas pela falta de planejamento detalhado e, também, pela falta de orientação especializada. Vale destacar que a figura do Engenheiro Florestal só surge no Brasil na década de 1960. A falta de planejamento pode ser facilmente percebido pelo desconhecimento acerca das características do terreno, dos cursos hídricos, da distribuição das espécies, da distribuição das árvores de interesse, entre outros.
+
+--- 
+
+Desde da década de 1990, a exploração de impacto reduzido tem se difundido bastante, especialmente no manejo de florestas tropicais como a Amazônia. A exploração de impacto reduzido é um sistema integrado que busca o manejo florestal sustentável associado à proteção dos recursos remanescentes. Para que uma floresta esteja efetivamente sob manejo florestal sustentável, é imprescindível que harmonicamente sejam adotadas ações voltadas para a colheita, para a silvicultura e para o monitoramento. Essas práticas buscam garantir os benefícios econômicos, sociais e ambientais de forma equilibrada.
+</script></section><section  data-markdown><script type="text/template">
+Ao contrário da exploração convencional, o fator mais importante na exploração de impacto reduzido é a capacitação das pessoas envolvidas na exploração. Com a instrução adequada, é possível utilizar as melhores técnicas de colheita de madeira, reduzindo os danos à vegetação remanescente, ao solo, à água e à biodiversidade. 
+</script></section><section  data-markdown><script type="text/template">
+A legislação brasileira, garante a adoção da exploração de impacto reduzido por meio do Plano de Manejo Florestal Sustentável (PMFS). Este plano consiste num documento técnico que busca garantir a continuidade da produção e reduzir o desperdício. Manejar a floresta significa organizar ações que permitam ordenar os fatores de produção, controlando sua produtividade e eficiência. Os objetivos deverão ser traçados com base num conjunto de princípios, técnicas e normas que garantam a perpetuidade dos serviços ecossistêmicos da floresta.
+
+</script></section></div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+	<script src="plugin/mermaid/mermaid.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath.MathJax3,
+		  RevealMermaid,
+		  RevealCustomControls,
+        ],
+
+		mathjax3: {
+			mathjax: 'plugin/math/mathjax/tex-mml-chtml.js',
+		},
+
+		customcontrols: {
+			controls: [
+			]
+		},
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"width":960,"height":700,"margin":0.04,"controls":true,"progress":true,"slideNumber":true,"transition":"slide","transitionSpeed":"default"}, queryOptions);
+    </script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
