@@ -10,7 +10,7 @@
 - [MFA2F1 Ficha Sistemas do manejo florestal sustentável](https://htmlpreview.github.io/?https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA2F1%20Ficha%20Sistemas%20do%20manejo%20florestal%20sustentavel/index.html) #slide
 
 ### Aula 3
-- Legislação relacionada ao manejo](https://snif.florestal.gov.br/pt-br/legislacao-florestal/460-instrucoes-normativas) #read 
+- [Legislação relacionada ao manejo](https://snif.florestal.gov.br/pt-br/legislacao-florestal/460-instrucoes-normativas) #read 
 - [MFA3F1 Ficha Exploracao de impacto reduzido](https://htmlpreview.github.io/?https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA3F1%20Ficha%20Exploracao%20de%20impacto%20reduzido/index.html) #slide 
 
 ### Aula 4
