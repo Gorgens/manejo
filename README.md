@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+# Otimização Florestal
 
-You can use the [editor on GitHub](https://github.com/Gorgens/manejo/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+## PBL Ordenamento Florestal
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Aula 1
+- [MFA1F1 Ficha Abertura Manejo Florestal](https://htmlpreview.github.io/?) #slide 
+- [MFA1F2 Ficha Manejo florestal sustentavel](https://htmlpreview.github.io/?) #slide 
 
-### Markdown
+### Aula 2
+- [MFA2F1 Ficha Sistemas do manejo florestal sustentável](https://htmlpreview.github.io/?) #slide
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Aula 3
+- Legislação relacionada ao manejo](https://snif.florestal.gov.br/pt-br/legislacao-florestal/460-instrucoes-normativas) #read 
+- [MFA3F1 Ficha Exploracao de impacto reduzido](https://htmlpreview.github.io/?) #slide 
 
-```markdown
-Syntax highlighted code block
+### Aula 4
+- [MFA4F1 Ficha Estrutura da floresta](https://htmlpreview.github.io/?) #slide 
+- [MFA4T2 Tarefa Espécies mais importantes](https://htmlpreview.github.io/?) #slide
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Gorgens/manejo/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
