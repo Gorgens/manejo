@@ -1,6 +1,6 @@
-# Otimização Florestal
+# Estrutura, Dinâmica e Manejo de Florestas Nativas
 
-## PBL Ordenamento Florestal
+## PBL Manejo Florestal
 
 ### Aula 1
 - [MFA1F1 Ficha Abertura Manejo Florestal](https://htmlpreview.github.io/?https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA1F1%20Ficha%20Abertura%20Manejo%20Florestal/index.html) #slide 
