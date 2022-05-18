@@ -11,11 +11,14 @@
 
 ### Aula 3
 - [Legislação relacionada ao manejo](https://snif.florestal.gov.br/pt-br/legislacao-florestal/460-instrucoes-normativas) #read 
-- [MFA3F1 Ficha Exploracao de impacto reduzido](https://htmlpreview.github.io/?https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA3F1%20Ficha%20Exploracao%20de%20impacto%20reduzido/index.html) #slide 
 
 ### Aula 4
-- [MFA4F1 Ficha Estrutura da floresta](https://htmlpreview.github.io/?https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA4F1%20Ficha%20Estrutura%20da%20floresta/index.html) #slide 
-- [MFA4T2 Tarefa Espécies mais importantes](https://htmlpreview.github.io/?https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA4T2%20Tarefa%20Especies%20mais%20importantes/index.html) #slide
+- [MFA4F1 Ficha Exploracao de impacto reduzido](https://htmlpreview.github.io/?https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA4F1%20Ficha%20Exploracao%20de%20impacto%20reduzido/index.html) #slide 
+
+
+### Aula 5
+- [MFA5F1 Ficha Estrutura da floresta](https://htmlpreview.github.io/?https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA5F1%20Ficha%20Estrutura%20da%20floresta/index.html) #slide 
+- [MFA5T2 Tarefa Espécies mais importantes](https://htmlpreview.github.io/?https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA5T2%20Tarefa%20Especies%20mais%20importantes/index.html) #slide
 
 ## PBL Falando de árvores e florestas
 
