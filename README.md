@@ -22,7 +22,11 @@
 - [MFA5T3 Tarefa Caracterizacao ecologica](https://htmlpreview.github.io/?https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA5T3%20Tarefa%20Caracterizacao%20ecologica/index.html) #slide
 
 ### Aula 6
-- [MFA6F1 Ficha Grupo ecologico](https://htmlpreview.github.io/?https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA6F1%20Ficha%20Grupo%20ecologico/index.html) #slide 
+
+- [MFA6F1 Ficha Grupo ecologico](https://htmlpreview.github.io/?https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA6F1%20Ficha%20Grupo%20ecologico/index.html) #slide
+
+### Aula 7
+
 - [Sobre distribuições](https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA6T2%20Tarefa%20Estrutura%20diametrica%20da%20comunidade/cheat%20sheet%20-%20distribuicoes.pdf) #read
 - [Sobre Liocourt](https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA6T2%20Tarefa%20Estrutura%20diametrica%20da%20comunidade/cheat%20sheet%20liocourt.pdf) #read
 - [MFA6T2 Tarefa Estrutura diametrica da comunidade](https://htmlpreview.github.io/?https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA6T2%20Tarefa%20Estrutura%20diametrica%20da%20comunidade/index.html) #slide 
