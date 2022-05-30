@@ -28,6 +28,10 @@
 - [Sobre distribuições](https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA6T2%20Tarefa%20Estrutura%20diametrica%20da%20comunidade/cheat%20sheet%20-%20distribuicoes.pdf) #read
 - [Sobre Liocourt](https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA6T2%20Tarefa%20Estrutura%20diametrica%20da%20comunidade/cheat%20sheet%20liocourt.pdf) #read
 
+### Aula 8
+
+- [MFA8F1 Ficha Etapas do manejo](https://htmlpreview.github.io/?https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA8F1%20Ficha%20Etapas%20do%20manejo/index.html)
+
 
 ## PBL Falando de árvores e florestas
 
