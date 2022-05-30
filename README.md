@@ -18,8 +18,6 @@
 
 ### Aula 5
 - [MFA5F1 Ficha Estrutura da floresta](https://htmlpreview.github.io/?https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA5F1%20Ficha%20Estrutura%20da%20floresta/index.html) #slide 
-- [MFA5T2 Tarefa Espécies mais importantes](https://htmlpreview.github.io/?https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA5T2%20Tarefa%20Especies%20mais%20importantes/index.html) #slide
-- [MFA5T3 Tarefa Caracterizacao ecologica](https://htmlpreview.github.io/?https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA5T3%20Tarefa%20Caracterizacao%20ecologica/index.html) #slide
 
 ### Aula 6
 
@@ -29,7 +27,6 @@
 
 - [Sobre distribuições](https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA6T2%20Tarefa%20Estrutura%20diametrica%20da%20comunidade/cheat%20sheet%20-%20distribuicoes.pdf) #read
 - [Sobre Liocourt](https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA6T2%20Tarefa%20Estrutura%20diametrica%20da%20comunidade/cheat%20sheet%20liocourt.pdf) #read
-- [MFA6T2 Tarefa Estrutura diametrica da comunidade](https://htmlpreview.github.io/?https://github.com/Gorgens/manejo/blob/main/pbl_manejo/MFA6T2%20Tarefa%20Estrutura%20diametrica%20da%20comunidade/index.html) #slide 
 
 
 ## PBL Falando de árvores e florestas
